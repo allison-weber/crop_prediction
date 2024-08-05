@@ -1,0 +1,21 @@
+# 3-layer NN
+# Corn: best values after 10 epoch grid search {'HIDDEN_DIM': 100, 'learning_rate': 0.005, 'weight_decay': 0.001} => unstable test curve
+# Corn: at 20 epochs smoother is: HIDDEN_DIM = 80, learning_rate = 0.001,  weight_decay= 0.01
+# Cotton: random search result: RMSE=90.7 {'learning_rate': 0.0691, 'weight_decay': 0.07041, 'hidden_dim': 55, 'activation_func': SELU()}
+# Soybeans: random search result: Best RMSE: 4.8, Best Config: {'learning_rate': 0.0051, 'weight_decay': 0.01141, 'hidden_dim': 55, 'activation_func': LeakyReLU(negative_slope=0.01)}
+#               Best RMSE: 4.4, Best Config: {'learning_rate': 0.0151, 'weight_decay': 0.00211, 'hidden_dim': 25, 'activation_func': SELU()}
+
+# 2-layer
+# Soyeban Best RMSE: 5.05, Best Config: {'learning_rate': 0.0041, 'weight_decay': 0.03621, 'hidden_dim': 20, 'activation_func': ReLU()}
+# Corn Best RMSE: 100.20, Best Config: {'learning_rate': 0.0691, 'weight_decay': 0.04521, 'hidden_dim': 75, 'activation_func': GELU(approximate='none')}
+#Best RMSE: 16.58, Best Config: {'learning_rate': 0.0071, 'weight_decay': 0.03171, 'hidden_dim': 75, 'activation_func': SELU()}
+# Best RMSE: 18.78, Best Config: {'learning_rate': 0.0021, 'weight_decay': 0.03291, 'hidden_dim': 90, 'activation_func': ReLU()}
+# Best RMSE: 16.78, Best Config: {'learning_rate': 0.0141, 'weight_decay': 0.03801, 'hidden_dim': 35, 'activation_func': ReLU()}
+# 3-layer: Best RMSE: 14.08, Best Config: {'learning_rate': 0.0141, 'weight_decay': 0.00201, 'hidden_dim': 65, 'activation_func': SELU()}
+
+# Best RMSE: 104.5, Best Config: {'learning_rate': 0.0471, 'weight_decay': 0.04631, 'hidden_dim': 85, 'activation_func': GELU(approximate='none')}
+
+# Best RMSE: 97.79, Best Config: {'learning_rate': 0.0481, 'weight_decay': 0.02621, 'hidden_dim': 50, 'activation_func': LeakyReLU(negative_slope=0.01)}
+# Best RMSE at last epoch: 106.8, Best Config at last epoch: {'learning_rate': 0.0141, 'weight_decay': 0.04841, 'hidden_dim': 75, 'activation_func': SELU()}
+
+# Best RMSE: 99.2, Best Config: {'learning_rate': 0.0151, 'weight_decay': 0.04051, 'hidden_dim': 45, 'activation_func': LeakyReLU(negative_slope=0.01)}
